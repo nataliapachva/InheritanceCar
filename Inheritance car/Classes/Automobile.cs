@@ -48,7 +48,7 @@ namespace Inheritance_car.Classes
 
         public override string ToString()
         {
-            return $"{Brand}, {Model}, {Color}, {VIN},  {MaximumSpeed}, {PowerOfEngine}, {CapacityOfEngine}";
+            return $"{Brand}, {Model}, {Color}, {VIN}, {MaximumSpeed}, {PowerOfEngine}, {CapacityOfEngine}";
         }
 
         protected void Input(string[] array)
