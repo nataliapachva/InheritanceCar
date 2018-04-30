@@ -1,0 +1,3 @@
+brand, model, color, maxSpeed, powerOfEngine, CapOfEngine, aeroDyn
+"Mercedes", "C63", "black", "670", "240", "18", "5"
+"Porsche", "Panamera", "black", "870", "400", "350", "4"

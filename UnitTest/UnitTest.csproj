@@ -52,6 +52,7 @@
     <Compile Include="ClassTests\CarTest.cs" />
     <Compile Include="ClassTests\ConverterTest.cs" />
     <Compile Include="ClassTests\SportsCarTest.cs" />
+    <Compile Include="ClassTests\TaskTest.cs" />
     <Compile Include="ClassTests\TruckTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
