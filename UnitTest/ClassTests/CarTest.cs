@@ -46,5 +46,23 @@ namespace UnitTest.ClassTests
             b.PowerOfEngine = Convert.ToDouble(TestContext.DataRow["second"].ToString());
             Assert.AreEqual(a.CompareTo(b), Convert.ToInt32(TestContext.DataRow["result"].ToString()));
         }
+
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
+                 "|DataDirectory|\\GetVolumeOfFuelDataTests.csv", "GetVolumeOfFuelDataTests#csv", DataAccessMethod.Sequential),
+         DeploymentItem("C:\\Users\\Yura\\source\\repos\\Task6\\InheritanceCar\\UnitTest\\TestsData\\CarData"), TestMethod]
+        public void TestGetVolumeOfFuel()
+        {
+            Car b = new Car();
+            b.Input(TestContext.DataRow["brand"].ToString() + " " +
+                TestContext.DataRow["model"].ToString() + " " +
+                TestContext.DataRow["color"].ToString() + " " +
+                (TestContext.DataRow["maxSpeed"].ToString()) + " " +
+                (TestContext.DataRow["powerOfEngine"].ToString()) + " " +
+                (TestContext.DataRow["CapOfEngine"].ToString()) + " " +
+                (TestContext.DataRow["Passengers"].ToString()));
+            string a = Convert.ToString(b.GetVolumeOfFuel(100));
+            Assert.IsTrue(a.Equals((TestContext.DataRow["output"].ToString()), StringComparison.OrdinalIgnoreCase));
+        }
+
     }
 }

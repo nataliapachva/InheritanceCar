@@ -60,6 +60,9 @@
     <None Include="TestsData\CarData\CarCompareToDataTests.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="TestsData\CarData\GetVolumeOfFuelDataTests.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="TestsData\CarData\CarInputDataTests.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

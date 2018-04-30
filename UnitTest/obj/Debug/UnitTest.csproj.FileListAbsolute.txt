@@ -24,3 +24,4 @@ C:\Users\Yura\source\repos\Task6\InheritanceCar\UnitTest\bin\Debug\TestsData\Car
 C:\Users\Yura\source\repos\Task6\InheritanceCar\UnitTest\bin\Debug\TestsData\ConverterData\KmToMetersDataTests.csv
 C:\Users\Yura\source\repos\Task6\InheritanceCar\UnitTest\bin\Debug\TestsData\ConverterData\KPerHToMetPerSecDataTests.csv
 C:\Users\Yura\source\repos\Task6\InheritanceCar\UnitTest\bin\Debug\TestsData\ConverterData\HpsToWattDataTests.csv
+C:\Users\Yura\source\repos\Task6\InheritanceCar\UnitTest\bin\Debug\TestsData\CarData\GetVolumeOfFuelDataTests.csv
