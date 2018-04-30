@@ -12,22 +12,28 @@ namespace Inheritance_car
     {
         static void Main(string[] args)
         {
-            Task task= new Task();
-            List <IAutomobile> automobiles = task.InpuList();
-           
-            Console.WriteLine("Sorted list by power of engine: ");
-            task.SortListByPowerOfEngine(automobiles);
-            for (int i = 0; i < automobiles.Count; i++)
+            try
             {
-                Console.WriteLine(automobiles[i].ToString());
+                Task task = new Task();
+                List<IAutomobile> automobiles = task.InpuList();
+
+                Console.WriteLine("Sorted list by power of engine: ");
+                task.SortListByPowerOfEngine(automobiles);
+                for (int i = 0; i < automobiles.Count; i++)
+                {
+                    Console.WriteLine(automobiles[i].ToString());
+                }
+
+                Console.WriteLine("The fastest car: ");
+                Console.WriteLine(task.FindTheFastest(automobiles));
+
+                Console.WriteLine("The most economical car: ");
+                Console.WriteLine(task.FindEconomical(automobiles, 100));
             }
-
-            Console.WriteLine("The fastest car: ");
-            Console.WriteLine(task.FindTheFastest(automobiles));
-
-            Console.WriteLine("The most economical car: ");
-            Console.WriteLine(task.FindEconomical(automobiles, 100));
-
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
             Console.ReadKey();
         }
     }

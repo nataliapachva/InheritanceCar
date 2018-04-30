@@ -57,22 +57,27 @@ namespace Inheritance_car
 
         public List<IAutomobile> InputListFromConsole()
         {
-            List<IAutomobile> automobiles=new List<IAutomobile>();
-            Console.WriteLine("Enter size of cars(there is a basic list of machines, if you do not want to add to the list " +
-                              "enter the size of the cars 0): ");
-            string str = Console.ReadLine();
-            int count = Convert.ToInt32(str);
-            if (count != 0)
-            {
-                ShowHead();
-                for (int i = 0; i < count; i++)
-                {
-                    string line = Console.ReadLine();
-                    IAutomobile car = Parse(line);
-                    automobiles.Add(car);
-                }
-            }
 
+            List<IAutomobile> automobiles = new List<IAutomobile>();
+            Console.WriteLine("Enter size of cars(there is a basic list of machines, if you do not want to add to the list " +
+                    "enter the size of the cars 0): ");
+                string str = Console.ReadLine();
+                int count = Convert.ToInt32(str);
+                if (count > 0)
+                {
+                    ShowHead();
+                    for (int i = 0; i < count; i++)
+                    {
+                        string line = Console.ReadLine();
+                        IAutomobile car = Parse(line);
+                        automobiles.Add(car);
+                    }
+                }
+                else
+                {
+                    throw new Exception("wrong size");
+                }
+    
             return automobiles;
         }
 
