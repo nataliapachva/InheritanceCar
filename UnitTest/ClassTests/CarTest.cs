@@ -13,7 +13,7 @@ namespace UnitTest.ClassTests
 
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
                  "|DataDirectory|\\CarInputDataTests.csv", "CarInputDataTests#csv", DataAccessMethod.Sequential),
-         DeploymentItem("C:\\Users\\Yura\\source\\repos\\Task6\\InheritanceCar\\UnitTest\\TestsData\\CarData"), TestMethod]
+         DeploymentItem("TestsData\\CarData"), TestMethod]
         public void TestInput()
         {
             Car a = new Car(TestContext.DataRow["brand"].ToString(),
@@ -37,7 +37,7 @@ namespace UnitTest.ClassTests
 
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
                  "|DataDirectory|\\CarCompareToDataTests.csv", "CarCompareToDataTests#csv", DataAccessMethod.Sequential),
-         DeploymentItem("C:\\Users\\Yura\\source\\repos\\Task6\\InheritanceCar\\UnitTest\\TestsData\\CarData"), TestMethod]
+         DeploymentItem("TestsData\\CarData"), TestMethod]
         public void TestCopareTo()
         {
             Car a = new Car();
@@ -49,7 +49,7 @@ namespace UnitTest.ClassTests
 
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
                  "|DataDirectory|\\GetVolumeOfFuelDataTests.csv", "GetVolumeOfFuelDataTests#csv", DataAccessMethod.Sequential),
-         DeploymentItem("C:\\Users\\Yura\\source\\repos\\Task6\\InheritanceCar\\UnitTest\\TestsData\\CarData"), TestMethod]
+         DeploymentItem("TestsData\\CarData"), TestMethod]
         public void TestGetVolumeOfFuel()
         {
             Car b = new Car();

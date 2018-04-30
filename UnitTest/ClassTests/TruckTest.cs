@@ -13,7 +13,7 @@ namespace UnitTest.ClassTests
 
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
                  "|DataDirectory|\\TruckInputDataTests.csv", "TruckInputDataTests#csv", DataAccessMethod.Sequential),
-         DeploymentItem("C:\\Users\\Yura\\source\\repos\\Task6\\InheritanceCar\\UnitTest\\TestsData\\TruckData"), TestMethod]
+         DeploymentItem("TestsData\\TruckData"), TestMethod]
         public void TestInput()
         {
             SportsCar a = new SportsCar(TestContext.DataRow["brand"].ToString(),
@@ -37,7 +37,7 @@ namespace UnitTest.ClassTests
 
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
                  "|DataDirectory|\\TruckCompareToDataTests.csv", "TruckCompareToDataTests#csv", DataAccessMethod.Sequential),
-         DeploymentItem("C:\\Users\\Yura\\source\\repos\\Task6\\InheritanceCar\\UnitTest\\TestsData\\TruckData"), TestMethod]
+         DeploymentItem("TestsData\\TruckData"), TestMethod]
         public void TestCopareTo()
         {
             SportsCar a = new SportsCar();

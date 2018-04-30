@@ -13,7 +13,7 @@ namespace UnitTest.ClassTests
 
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
                  "|DataDirectory|\\KmToMetersDataTests.csv", "KmToMetersDataTests#csv", DataAccessMethod.Sequential),
-         DeploymentItem("C:\\Users\\Yura\\source\\repos\\Task6\\InheritanceCar\\UnitTest\\TestsData\\ConverterData"), TestMethod]
+         DeploymentItem("TestsData\\ConverterData"), TestMethod]
         public void TestKmToM()
         {
             Converter tmp = new Converter();
@@ -22,7 +22,7 @@ namespace UnitTest.ClassTests
        
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
                  "|DataDirectory|\\KPerHToMetPerSecDataTests.csv", "KPerHToMetPerSecDataTests#csv", DataAccessMethod.Sequential),
-         DeploymentItem("C:\\Users\\Yura\\source\\repos\\Task6\\InheritanceCar\\UnitTest\\TestsData\\ConverterData"), TestMethod]
+         DeploymentItem("TestsData\\ConverterData"), TestMethod]
         public void TestKilometersPerHourToMetersPerSecond()
         {
             Converter tmp = new Converter();
@@ -31,7 +31,7 @@ namespace UnitTest.ClassTests
         
            [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
                  "|DataDirectory|\\HpsToWattDataTests.csv", "HpsToWattDataTests#csv", DataAccessMethod.Sequential),
-         DeploymentItem("C:\\Users\\Yura\\source\\repos\\Task6\\InheritanceCar\\UnitTest\\TestsData\\ConverterData"), TestMethod]
+         DeploymentItem("TestsData\\ConverterData"), TestMethod]
         public void TestHpsToWatt()
         {
             Converter tmp = new Converter();
