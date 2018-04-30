@@ -49,6 +49,15 @@ namespace Inheritance_car
             List<IAutomobile> automobiles = new List<IAutomobile>();
             List<IAutomobile> baseAutomobiles = GetBaseAutomobiles();
             automobiles.AddRange(baseAutomobiles);
+            List<IAutomobile> automobilesFromConsole = InputListFromConsole();
+            automobiles.AddRange(automobilesFromConsole);
+
+            return automobiles;
+        }
+
+        public List<IAutomobile> InputListFromConsole()
+        {
+            List<IAutomobile> automobiles=new List<IAutomobile>();
             Console.WriteLine("Enter size of cars(there is a basic list of machines, if you do not want to add to the list " +
                               "enter the size of the cars 0): ");
             string str = Console.ReadLine();
